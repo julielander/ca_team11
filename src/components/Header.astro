@@ -1,0 +1,131 @@
+<header>
+  <div>
+    <a href="/"><img id="logo_mobil" src="/logo/CA_Logo.png" alt="logo_mobil" /></a>
+        <a href="/"><img id="logo_web" src="/logo/CA_Logo_vertikal.png" alt="logo_web" /></a>
+  </div>
+  <nav>
+    <ul class="menu">
+      <li><a href="/" id="teskt">Bliv medlem</a></li>
+    </ul>
+  </nav>
+
+  <div class="img_container">
+<img src="/img/search.png" alt="search" class="img">
+<img src="/img/customer.png" alt="customer" class="img">
+<img src="/img/menu.png" alt="menu" class="img">
+  </div>
+
+</header>
+
+<style>
+
+  /* CSS for mobilskærme (mindre end 768px bredde) */
+@media (max-width: 767px) {
+
+  #logo_mobil {
+    display: block; /* Vis mobilbilledet på mobilenheder */
+  }
+  #logo_web {
+    display: none; /* Skjul webbilledet på mobilenheder */
+  }
+  #teskt {
+    display: none; /* Skjul tekst på mobilenheder */
+  }
+}
+
+/* CSS for desktopskærme (bredere end 768px) */
+@media (min-width: 768px) {
+  #logo_web {
+    display: block; /* Vis webbilledet på desktop */
+  }
+
+  #teskt {
+    display: block; /* Vis tekst på desktop */
+  }
+
+  #logo_mobil {
+    display: none; /* Skjul mobilbilledet på desktop */
+  }
+}
+
+  header {
+    display: flex;
+    align-items: center;
+    background-color: #0C79AD;
+    top: 0;
+    left: 0;
+  }
+
+    nav {
+    display: flex;
+    align-items: center;
+  }
+
+    #logo_mobil  {
+    max-width: 120px;
+  }
+
+    li a {
+  text-decoration: underline; 
+    color: white;
+    font-weight: 100;
+    font-size: 0.8rem;
+  }
+
+  .img_container {
+      display: flex; 
+      justify-content: space-between;
+        position: absolute;
+        top: 30px;
+        right: 20px;
+  }
+
+   .img {
+     width: 30px;
+    padding: 6px;
+    }	
+
+  @media (min-width: 800px) {
+    header {
+      top: 0;
+      display: flex;
+      align-items: center;
+    }
+
+    #logo_web {
+      width: 200px;
+      height: auto;
+      align-self: center;
+    }
+
+    .menu {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    list-style: none;
+    top: 35px;
+    right: 200px;
+  }
+
+        li a {
+  text-decoration: underline;
+      color: white;
+      font-size: 1rem;
+    }
+
+  .img_container {
+      display: flex; 
+      justify-content: space-between;
+        position: absolute;
+        top: 35px;
+        right: 30px;
+  }
+
+   .img {
+      width: 30px;
+      padding: 10px;
+    }	
+
+  }
+  </style>
+
