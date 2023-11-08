@@ -1,5 +1,7 @@
 ---
+
 import Header from "../components/Header.astro";
+import Button from "../components/Button.astro";
 ---
 
 <html lang="en">
@@ -15,5 +17,94 @@ import Header from "../components/Header.astro";
   </header>
 
 	<body>
+		<section class="række1">
+			<div class="tekst1">
+				<h1>CA Studiepartner og A-Kasse</h1>
+				<p>Med CA får du en a-kasse, der bringer dig videre i karrieren.
+				I CA får du udvikling og tryghed - og den bedste medlemsservice i branchen.
+				<div>
+	            <Button variant="primary">Blev medlem</Button>
+				<Button variant="secondary">Mine fordele</Button>
+				</div>
+                <p>5 stjerner på Trustpilot</p>
+			</div>
+			<div class="billede_1">
+			<img src="/img/billede3.webp" alt="image2personer">
+	
+			</div>
+		</section>
 	</body>
 </html>
+<style>
+
+body{
+	background-color: #E6E6DE;
+}
+
+  /* CSS for mobilskærme (mindre end 768px bredde) */
+@media (max-width: 768px) {
+.række1 {
+background-color: #054673;
+margin: 10px 10px 10px 10px;
+padding:15px 30px 15px 30px;
+border-radius: 20px;
+
+}
+h1 {
+	color: white;
+	font-weight: bold;
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 30px;
+}
+p{
+	color: white;
+	font-family: 'Times New Roman', Times, serif;
+	font-weight:100;
+	font-size: 24px;
+}
+.tekst1{
+	text-align: left;
+	margin-left: 10px;
+}
+.billede_1 {
+	width: 50%;
+}
+  }
+  /* CSS for desktopskærme (bredere end 768px) */
+@media (min-width: 768px) {
+.række1 {
+background-color: #054673;
+margin: 40px 60px 10px 40px;
+padding:15px 30px 15px 30px;
+border-radius: 20px;
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+
+}
+
+.tekst1{
+	text-align: left;
+	margin-left: 10px;
+}
+.billede_1 {
+	width: 100%;
+	display: grid;
+	justify-items: center;
+	
+}
+
+h1 {
+	color: white;
+	font-weight: 600;
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 40px;
+}
+p{
+	color: white;
+	font-family: 'Times New Roman', Times, serif;
+	font-weight:50;
+	font-size: 20px;
+}
+}
+
+</style>
