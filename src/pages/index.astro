@@ -1,4 +1,6 @@
 ---
+import "../styles/global.css";
+import FordeleCard from "../components/FordeleCard.astro";
 import Header from "../components/Header.astro";
 ---
 
@@ -15,5 +17,39 @@ import Header from "../components/Header.astro";
   </header>
 
 	<body>
+<main>
+	<div class="boks">
+		<h2 class="overskrift_fordele">10 Fordele, ved at være medlem af CA</h2>
+	    <FordeleCard
+		title="Dagpenge efter endt uddannelse"
+        imgPath="/img/search.svg"
+        />
+		<FordeleCard
+		title="Dagpenge efter endt uddannelse"
+        imgPath="/img/search.svg"
+        />
+		<FordeleCard
+		title="Dagpenge efter endt uddannelse"
+        imgPath="/img/search.svg"
+        />
+    </div>
+</main>
+
 	</body>
 </html>
+
+
+ <style>
+.overskrift_fordele {
+	color: #0C79AD;
+	margin-left: 330px;
+}
+.boks {
+ background-color: #1B4473;
+ display: inline-block;
+ padding: 10px; 
+ border-radius: 20px;
+ margin-top: 30px;
+ margin-left: 220px;
+}
+ </style>

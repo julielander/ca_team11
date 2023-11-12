@@ -1,0 +1,23 @@
+---
+const { title, body, imgPath } = Astro.props;
+---
+
+
+
+    <figure class="box">
+
+    <h3>
+       {title}
+    </h3>
+      <img src={imgPath} alt="" height="" width="" />
+    </figure>
+
+
+<style>
+.box {
+ background-color: #0C79AD;
+ display: inline-block;
+ padding: 10px; 
+ border-radius: 20px;
+}
+</style>
