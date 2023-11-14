@@ -52,6 +52,15 @@ import Button from "../components/Button.astro";
         imgPath="/img/search.svg"
         />
 		</section>
+		<section id="række3">
+			<h2>Studiestarts Kampagne</h2>
+			<div class="some_Content">
+            <div><img class="billede_rund2" src="/img/2_2.webp" alt="billede"></div>
+			<div><img class="billede_rund2" src="/img/2_2.webp" alt="billede"></div>
+			<div><img class="billede_rund2" src="/img/2_2.webp" alt="billede"></div>
+			<div><img class="billede_rund2" src="/img/2_2.webp" alt="billede"></div>
+			</div>
+		</section>
 	</main>
 	</body>
 <Footer />
@@ -105,7 +114,24 @@ border-radius: 20px;
  grid-template-columns: 1fr 1fr;
 
 }
+#række3 {
+background-color: white;
+margin: 40px 60px 50px 40px;
+padding:10px 30px 40px 30px;
+border-radius: 20px;
+}
+.some_Content{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+gap: 20px;
 
+}
+h2 {
+	color: #0C79AD;
+	font-weight: bold;
+	font-size: 30px;
+	margin-left: 455px;
+}
 .tekst1{
 	text-align: left;
 	margin-left: 10px;
@@ -118,6 +144,11 @@ border-radius: 20px;
 .billede_rund {
 	border-radius: 20px;
 	margin-left: 350px;
+}
+.billede_rund2 {
+	border-radius: 20px;
+	width: 100%;
+	
 }
 h1 {
 	color: white;
