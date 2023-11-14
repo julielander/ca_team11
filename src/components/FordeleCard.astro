@@ -14,10 +14,34 @@ const { title, body, imgPath } = Astro.props;
 
 
 <style>
+
+@media (max-width: 768px) {
 .box {
- background-color: #0C79AD;
+ background-color: #1B4473;
  display: inline-block;
  padding: 10px; 
  border-radius: 20px;
+ width: 60%
+}
+
+h3 {
+  margin-left: 10px;
+  font-size: 15px;
+}
+}
+
+@media (min-width: 768px) {
+.box {
+ background-color: #1B4473;
+ display: inline-block;
+ padding: 10px; 
+ border-radius: 20px;
+ width: 11%
+}
+
+h3 {
+  margin-left: 10px;
+  font-size: 10px;
+}
 }
 </style>

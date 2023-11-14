@@ -38,19 +38,34 @@ import Button from "../components/Button.astro";
 
 		<section>
 		<div class="boks">
-		<h2 class="overskrift_fordele">10 Fordele, ved at være medlem af CA</h2>
+		<h2 class="overskrift_fordele">Boost din studietid og sikre din fremtid 
+med gode grunde til at melde dig ind
+ i en a-kasse nu! </h2>
+ <div class="boks2">
 	    <FordeleCard
-		title="Dagpenge efter endt uddannelse"
-        imgPath="/img/search.svg"
+		title="Dagpenge som nyuddannet i op til 1 år"
+  imgPath="/img/CA_Logo.svg"
         />
 		<FordeleCard
-		title="Dagpenge efter endt uddannelse"
-        imgPath="/img/search.svg"
+		title="Faglige kurser og kompentenceudvikling"
+      imgPath="/img/CA_Logo.svg"
         />
 		<FordeleCard
-		title="Dagpenge efter endt uddannelse"
-        imgPath="/img/search.svg"
+		title="Tips og tricks til et lettere studieliv"
+        imgPath="/img/CA_Logo.svg"
         />
+			<FordeleCard
+		title="Billigere studieforsikring for studerende"
+        imgPath="/img/CA_Logo.svg"
+        />
+	<FordeleCard
+		title="Tjek af dine ansættelseskontrakt"
+        imgPath="/img/CA_Logo.svg"
+        />
+		</div>
+		<h2 class="overskrift_fordele">Meld dig ind i en a-kasse i dag og tag det første skridt mod karrieremulighederne der venter
+</h2>
+<h2 class="overskift_grip">- grip chancen nu</h2>
 		</section>
 		<section id="række3">
 			<h2>Studiestarts Kampagne</h2>
@@ -178,14 +193,19 @@ p{
 }
 
 
-@media (max-width: 768px) 
+@media (max-width: 768px) {
 	.overskrift_fordele {
-	color: #0C79AD;
+	color: white;
 	margin-left: 20px;
 }
 
+.overskift_grip {
+	color: white;
+	margin-left: 110px;
+}
+
 .boks {
- background-color: #1B4473;
+ background-color: #0C79AD;
  display: inline-block;
  padding: 10px; 
  border-radius: 20px;
@@ -194,19 +214,33 @@ p{
  width: 85%;
 }
 
+.boks2 {
+	margin-left: 15%;
+}
+}
+
 @media (min-width: 768px) {
 .overskrift_fordele {
-	color: #0C79AD;
-	margin-left: 455px;
+	color: white;
+	margin-left: 60px;
+}
+
+.overskift_grip {
+	color: white;
+	margin-left: 550px;
 }
 .boks {
- background-color: #1B4473;
+ background-color: #0C79AD;
  display: inline-block;
  padding: 10px; 
  border-radius: 20px;
  margin-top: 30px;
  margin-left: 40px;
  width: 92%;
+}
+
+.boks2{
+	margin-left: 7%;
 }
 }
  </style>
