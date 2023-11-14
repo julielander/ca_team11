@@ -19,6 +19,7 @@ import Button from "../components/Button.astro";
   </header>
 
 	<body>
+		<main>
 		<section class="række1">
 			<div class="tekst1">
 				<h1>CA Studiepartner og A-Kasse</h1>
@@ -32,9 +33,26 @@ import Button from "../components/Button.astro";
 			</div>
 			<div class="billede_1">
 			<img src="/img/billede3.webp" alt="image2personer">
-	
 			</div>
 		</section>
+
+		<section>
+		<div class="boks">
+		<h2 class="overskrift_fordele">10 Fordele, ved at være medlem af CA</h2>
+	    <FordeleCard
+		title="Dagpenge efter endt uddannelse"
+        imgPath="/img/search.svg"
+        />
+		<FordeleCard
+		title="Dagpenge efter endt uddannelse"
+        imgPath="/img/search.svg"
+        />
+		<FordeleCard
+		title="Dagpenge efter endt uddannelse"
+        imgPath="/img/search.svg"
+        />
+		</section>
+	</main>
 	</body>
 </html>
 <style>
@@ -55,12 +73,10 @@ border-radius: 20px;
 h1 {
 	color: white;
 	font-weight: bold;
-	font-family: 'Times New Roman', Times, serif;
 	font-size: 30px;
 }
 p{
 	color: white;
-	font-family: 'Times New Roman', Times, serif;
 	font-weight:100;
 	font-size: 24px;
 }
@@ -98,43 +114,17 @@ border-radius: 20px;
 h1 {
 	color: white;
 	font-weight: 600;
-	font-family: 'Times New Roman', Times, serif;
 	font-size: 40px;
 }
 p{
 	color: white;
-	font-family: 'Times New Roman', Times, serif;
 	font-weight:50;
 	font-size: 20px;
 }
 }
 
-</style>
-<main>
-	<div class="boks">
-		<h2 class="overskrift_fordele">10 Fordele, ved at være medlem af CA</h2>
-	    <FordeleCard
-		title="Dagpenge efter endt uddannelse"
-        imgPath="/img/search.svg"
-        />
-		<FordeleCard
-		title="Dagpenge efter endt uddannelse"
-        imgPath="/img/search.svg"
-        />
-		<FordeleCard
-		title="Dagpenge efter endt uddannelse"
-        imgPath="/img/search.svg"
-        />
-    </div>
-</main>
-
-	</body>
-</html>
-
-
- <style>
 .overskrift_fordele {
-	color: #0C79AD;
+	color: white;
 	margin-left: 330px;
 }
 .boks {
