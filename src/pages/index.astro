@@ -1,9 +1,9 @@
 ---
-
 import "../styles/global.css";
 import FordeleCard from "../components/FordeleCard.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import Button from "../components/Button.astro";
 ---
 
 <html lang="en">
@@ -29,10 +29,10 @@ import Footer from "../components/Footer.astro";
 	            <Button variant="primary">Blev medlem</Button>
 				<Button variant="secondary">Mine fordele</Button>
 				</div>
-                <p>5 stjerner på Trustpilot</p>
+    
 			</div>
 			<div class="billede_1">
-			<img src="/img/billede3.webp" alt="image2personer">
+			<img class="billede_rund" src="/img/billede3.webp" alt="image2personer">
 			</div>
 		</section>
 
@@ -66,8 +66,8 @@ body{
 @media (max-width: 768px) {
 .række1 {
 background-color: #054673;
-margin: 10px 10px 10px 10px;
-padding:15px 30px 15px 30px;
+margin: 20px 51px 15px 10px;
+padding:15px 0px 0px 0px;
 border-radius: 20px;
 
 }
@@ -87,6 +87,11 @@ p{
 }
 .billede_1 {
 	width: 50%;
+	height: auto;
+}
+
+.billede_rund {
+	border-radius: 20px;
 }
   }
   /* CSS for desktopskærme (bredere end 768px) */
@@ -94,7 +99,7 @@ p{
 .række1 {
 background-color: #054673;
 margin: 40px 60px 10px 40px;
-padding:15px 30px 15px 30px;
+padding:0px 0px 0px 30px;
 border-radius: 20px;
  display: grid;
  grid-template-columns: 1fr 1fr;
@@ -107,11 +112,13 @@ border-radius: 20px;
 }
 .billede_1 {
 	width: 100%;
+	height: auto;
 	display: grid;
-	justify-items: center;
-	
 }
-
+.billede_rund {
+	border-radius: 20px;
+	margin-left: 350px;
+}
 h1 {
 	color: white;
 	font-weight: 600;
@@ -124,9 +131,27 @@ p{
 }
 }
 
+
+@media (max-width: 768px) 
+	.overskrift_fordele {
+	color: #0C79AD;
+	margin-left: 20px;
+}
+
+.boks {
+ background-color: #1B4473;
+ display: inline-block;
+ padding: 10px; 
+ border-radius: 20px;
+ margin-top: 20px;
+ margin-left: 10px;
+ width: 85%;
+}
+
+@media (min-width: 768px) {
 .overskrift_fordele {
-	color: white;
-	margin-left: 330px;
+	color: #0C79AD;
+	margin-left: 455px;
 }
 .boks {
  background-color: #1B4473;
@@ -134,6 +159,8 @@ p{
  padding: 10px; 
  border-radius: 20px;
  margin-top: 30px;
- margin-left: 220px;
+ margin-left: 40px;
+ width: 92%;
+}
 }
  </style>
