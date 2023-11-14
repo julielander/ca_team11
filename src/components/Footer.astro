@@ -27,16 +27,18 @@
 <a href="/">	<p class="footer_contact">Tilgængelighedserklæring</p></a>
 </div>
 
-<div>
-    <p class="telefon_tekst">Telefon Hverdage:</p>
+<div class="info">
+    <p class="telefon_tekst">Telefon Hverdage</p>
     <p class="telefon_tekst">08:30 - 15:00</p>
 <p class="telefon"><a href="tel:+4533149045">33 14 90 45</a></p>
 </div>
 
-<div>
+<div class="logo-footer2">
     <a href="/">
-	<img src="/logo/CA_Logo_vertikal.png" alt="mini_logo" class="logo_footer1"></a>
+	<img src="/logo/CA_Logo_vertikal.png" alt="mini_logo" id="logo_footer1"></a>
+	<img src="/logo/CA_Logo.png" alt="mini_logo" id="logo_footer2"></a>
 </div>
+
 </section>
 <p class="footer_text">© CA A-Kasse | <a href="tel:+4533149045">3314 9045</a></p>
 
@@ -46,7 +48,17 @@
 </html>
 
 <style>
-    p {
+
+  /* CSS for mobilskærme (mindre end 768px bredde) */
+@media (max-width: 768px) {
+
+  #logo_footer1 {
+    display: block; /* Vis mobilbilledet på mobilenheder */
+  }
+  #logo_footer2 {
+    display: none; /* Skjul webbilledet på mobilenheder */
+  }
+   p {
         color: white;
     }
     .telefon_tekst {
@@ -70,13 +82,15 @@
   display: flex; /* Gør elementerne inden for denne div til en fleksibel container */
   justify-content: center; /* Ryk indholdet til højre inden for denne div */
 margin-right: 15px;
+margin-top:0;
 }
  .logo_footer {
       width: 30px;
     }	
-	 .logo_footer1 {
+	 #logo_footer1 {
       width: 30%;
 	  margin-top: 10px;
+	  margin-left:190px;
     }
 	.footer_contact {
 font-size: 0.7rem;
@@ -97,12 +111,32 @@ margin: 5px 15px;
 		text-decoration: none;
 		color: white;
 	}
+}
 
-@media (min-width: 800px)	
-{
-.grid_footer {
+
+
+/* CSS for desktopskærme (bredere end 768px) */
+@media (min-width: 768px) {
+  #logo_footer2 {
+    display: block; /* Vis webbilledet på desktop */
+  }
+
+  #logo_footer1 {
+    display: none; /* Skjul mobilbilledet på desktop */
+  }
+
+   p {
+        color: white;
+    }
+
+	a {
+	text-decoration: none;
+	color: white;
+	}
+
+  .grid_footer {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
 	align-items: center;
 	justify-content: space-between;
  }
@@ -110,18 +144,21 @@ margin: 5px 15px;
     justify-self: start; /* Placer grid_item1 helt til venstre */
     text-align: left;
 }
+
+
 .grid_item {
     display: flex; /* Gør elementerne inden for denne div til en fleksibel container */
     justify-content: flex-end; /* Ryk indholdet til højre inden for denne div */
-    margin-right: 15px;
+	 grid-column: 4;
+    grid-row: 1;
+	margin-top:-70px;
 }
  .logo_footer {
       width: 40px;
       margin-top: 20px;
     }	
-	 .logo_footer1 {
-      width: 80px;
-	  margin-top: 10px;
+	 #logo_footer2 {
+      width: 30%;
     }
 	.footer_contact {
         font-size: 0.9rem;
@@ -138,4 +175,23 @@ margin: 5px 15px;
 		margin: 20px 10px 10px 10px;
 	}
 
+
+.info {
+ grid-column: 2/ span 3;
+    grid-row: 2/ span 3;
+margin-left: -366px;
+margin-top:60px;
+}
+
+.logo-footer2 {
+	display: flex; /* Gør elementerne inden for denne div til en fleksibel container */
+    justify-content: flex-end; /* Ryk indholdet til højre inden for denne div */
+	 grid-column: 4;
+    grid-row: 2;
+}
+
+.telefon {
+	text-decoration:underline;
+	font-size:30px
+}
 }
