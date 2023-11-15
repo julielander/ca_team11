@@ -83,12 +83,12 @@ med gode grunde til at melde dig ind
 </html>
 <style>
 
-body{
-	background-color: #E6E6DE;
-}
-
   /* CSS for mobilskærme (mindre end 768px bredde) */
 @media (max-width: 768px) {
+
+main {
+	margin-left: 35px;
+ }
 .række1 {
 background-color: #054673;
 margin: 20px 51px 15px 10px;
@@ -101,7 +101,6 @@ background-color: white;
 border-radius: 20px;
 margin-bottom: 30px;
 }
-
 
 h1 {
 	color: white;
@@ -117,16 +116,11 @@ p{
 	text-align: left;
 	margin-left: 10px;
 }
-.billede_1 {
-	width: 50%;
-	height: auto;
-}
 
 .billede_rund2 {
 	border-radius: 20px;
 	width: 80%;
-		margin-left: 50px;
-	
+	margin-left: 50px;
 }
 h2 {
 	color: #0C79AD;
@@ -135,11 +129,42 @@ h2 {
 	margin-left: 50px;
 }
 
-.studie_tekst {
-	padding: 20px;
-	margin-left: 70px;
+.billede_rund {
+	border-radius: 20px;
+	margin-left: -2px;
+	margin-bottom: -4px;
+	width: 101%;
 }
-  }
+
+.overskrift_fordele {
+	color: white;
+	margin-left: 20px;
+}
+
+.overskift_grip {
+	color: white;
+	margin-left: 110px;
+}
+
+.boks {
+ background-color: #0C79AD;
+ display: inline-block;
+ padding: 10px; 
+ border-radius: 20px;
+ margin-top: 20px;
+ margin-left: 10px;
+ width: 85%;
+}
+
+.boks2 {
+	margin-left: 15%;
+}
+}
+
+
+
+
+
   /* CSS for desktopskærme (bredere end 768px) */
 @media (min-width: 768px) {
 .række1 {
@@ -196,32 +221,6 @@ p{
 	color: white;
 	font-weight:50;
 	font-size: 20px;
-}
-}
-
-@media (max-width: 768px) {
-	.overskrift_fordele {
-	color: white;
-	margin-left: 20px;
-}
-
-.overskift_grip {
-	color: white;
-	margin-left: 110px;
-}
-
-.boks {
- background-color: #0C79AD;
- display: inline-block;
- padding: 10px; 
- border-radius: 20px;
- margin-top: 20px;
- margin-left: 10px;
- width: 85%;
-}
-
-.boks2 {
-	margin-left: 15%;
 }
 }
 
